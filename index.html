@@ -103,6 +103,22 @@ h1{font-family:Manrope;font-size:clamp(64px,16vw,170px);line-height:.80;letter-s
 .point-card b{font-family:Manrope;font-size:27px}.point-num{color:var(--yellow);font-family:Manrope;font-weight:900;font-size:14px;float:right}
 .point-card p{color:#ffecee;line-height:1.5;margin-bottom:0}
 
+
+/* PRIZES */
+.prize-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:38px}
+.prize-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.prize-card.featured{background:#110a0c;color:#fff;border-color:#2b171a}
+.prize-card .prize-icon{font-size:32px;margin-bottom:18px}
+.prize-card h3{font-family:Manrope;font-size:27px;letter-spacing:-.04em;margin:0 0 9px}
+.prize-card p{color:var(--muted);line-height:1.55;margin:0}
+.prize-card.featured p{color:#ddd0d2}
+.prize-value{display:inline-block;margin-top:20px;padding:8px 12px;border-radius:999px;background:#fff1a8;color:#3b2d00;font-weight:900;font-size:13px}
+.prize-options{display:grid;gap:9px;margin-top:20px}
+.prize-option{padding:11px 13px;border-radius:14px;background:#fff8cf;border:1px solid #f2df9e;font-weight:800}
+.sponsor-note{margin-top:22px;padding:20px;border-radius:20px;background:#f8f3f0;border:1px solid var(--line);color:#5f5658;line-height:1.55}
+.sponsor-note strong{color:var(--red)}
+@media(min-width:760px){.prize-grid{grid-template-columns:repeat(3,1fr)}}
+
 /* HUB */
 .hub{display:grid;grid-template-columns:1fr;gap:12px;margin-top:35px}
 .hub-item{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;display:flex;gap:15px;align-items:flex-start}
@@ -145,13 +161,19 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
 .photo img{cursor:default;-webkit-user-drag:none;user-select:none}
 .photo-copy{position:relative;z-index:2}
 </style>
+
+<style>
+.voice-form{margin-top:22px;padding:24px;border:1px solid rgba(0,0,0,.12);border-radius:24px;background:linear-gradient(135deg,rgba(218,31,44,.07),rgba(245,190,0,.08));box-shadow:0 12px 35px rgba(0,0,0,.06)}
+.voice-form-head h3{margin:5px 0 6px;font-size:clamp(22px,4vw,32px)}
+.voice-form-head p{margin:0;opacity:.72}.voice-form label{font-size:13px;font-weight:700}.voice-form input,.voice-form select,.voice-form textarea{width:100%;margin-top:7px;padding:13px 14px;border:1px solid rgba(0,0,0,.14);border-radius:13px;background:#fff;font:inherit;box-sizing:border-box}.voice-form textarea{min-height:125px;resize:vertical}.voice-form .submit{cursor:pointer}
+</style>
 </head>
 <body>
 <nav class="nav">
   <div class="navbar">
     <a class="brand" href="#top"><span class="brand-mark">T</span><span>TROYA PASS</span></a>
     <div class="navlinks">
-      <a href="#pass">Pass</a><a href="#media">Media</a><a href="#casa">Casa Troya</a><a href="#voce">Voce</a><a href="#points">Points</a>
+      <a href="#pass">Pass</a><a href="#media">Media</a><a href="#casa">Casa Troya</a><a href="#voce">Voce</a><a href="#points">Points</a><a href="#premi">Premi</a>
     </div>
     <a class="navbtn" href="#richiedi">Richiedi Points</a>
   </div>
@@ -238,12 +260,59 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
       <div class="point-card"><span class="point-num">+30</span><b>🎥 Video</b><p>Video pubblicato sul Troya Pass dopo approvazione.</p></div>
       <div class="point-card"><span class="point-num">+40</span><b>🔥 Troya Day</b><p>Partecipazione a una delle attività della giornata.</p></div>
       <div class="point-card"><span class="point-num">+15</span><b>💡 Proposta</b><p>Una proposta selezionata e portata avanti nel percorso.</p></div>
+      <div class="point-card"><span class="point-num">+20</span><b>📸 Foto evento</b><p>Servizio fotografico durante un evento scolastico.</p></div>
+      <div class="point-card"><span class="point-num">+20</span><b>🎨 Grafica</b><p>Creazione di una grafica o locandina per la scuola.</p></div>
+      <div class="point-card"><span class="point-num">+30</span><b>🎥 Montaggio</b><p>Montaggio di un contenuto per Troya Media.</p></div>
+      <div class="point-card"><span class="point-num">+30</span><b>🏆 Organizza torneo</b><p>Collaborazione nell'organizzazione di un torneo.</p></div>
+      <div class="point-card"><span class="point-num">+20</span><b>♟️ Sfida speciale</b><p>Partecipazione a una sfida o torneo speciale.</p></div>
+      <div class="point-card"><span class="point-num">+20</span><b>🏃 Attività sportiva</b><p>Partecipazione a un'attività sportiva scolastica.</p></div>
+      <div class="point-card"><span class="point-num">+20</span><b>🤝 Supporto evento</b><p>Aiuto nell'organizzazione di un'attività scolastica.</p></div>
+      <div class="point-card"><span class="point-num">+20</span><b>🎄 Tombolata</b><p>Collaborazione alla Tombolata di dicembre.</p></div>
+      <div class="point-card"><span class="point-num">+30</span><b>🏫 Open Day</b><p>Supporto durante l'Open Day del Carlo Troya.</p></div>
+      <div class="point-card"><span class="point-num">+20</span><b>🎤 Evento o spettacolo</b><p>Partecipazione a un evento o spettacolo scolastico.</p></div>
+      <div class="point-card"><span class="point-num">+20</span><b>🎶 Attività artistica</b><p>Partecipazione a un'attività musicale o artistica.</p></div>
+      <div class="point-card"><span class="point-num">+5</span><b>🗳️ Votazione</b><p>Partecipazione a una votazione del Troya Pass, entro i limiti previsti.</p></div>
+      <div class="point-card"><span class="point-num">+20</span><b>🙋 Progetto scolastico</b><p>Partecipazione a un progetto scolastico.</p></div>
+      <div class="point-card"><span class="point-num">+40</span><b>🚀 Progetto studenti</b><p>Realizzazione di un progetto proposto dagli studenti.</p></div>
     </div>
+    <p class="lead" style="margin-top:28px;color:#ffe9ed">I Troya Points non premiano soltanto chi fa di più. Premiano chi sceglie di partecipare.</p>
   </div>
 </section>
 
+<section class="section" id="premi">
+  <div class="kicker">05 / Riconoscimenti</div>
+  <h2 class="title">Partecipare deve<br>lasciare qualcosa.</h2>
+  <p class="lead">I Troya Points non servono solo a costruire una classifica. Servono a riconoscere chi sceglie di partecipare, con premi, esperienze e riconoscimenti sostenuti dalla scuola e dagli eventuali sponsor.</p>
+  <div class="prize-grid">
+    <article class="prize-card">
+      <div class="prize-icon">🎁</div>
+      <h3>Estrazioni</h3>
+      <p>Alcuni traguardi di Troya Points possono dare accesso a estrazioni durante le assemblee.</p>
+      <span class="prize-value">3 estrazioni • fino a 200 €</span>
+    </article>
+    <article class="prize-card featured">
+      <div class="prize-icon">👤</div>
+      <h3>Premio Studente</h3>
+      <p>Un riconoscimento annuale dedicato alla partecipazione individuale e al contributo alla vita scolastica.</p>
+      <span class="prize-value">Valore indicativo: 350 €</span>
+    </article>
+    <article class="prize-card">
+      <div class="prize-icon">🏫</div>
+      <h3>Premio Classe</h3>
+      <p>La classe che raggiunge il risultato previsto dal regolamento può scegliere un'esperienza per tutta la classe.</p>
+      <div class="prize-options">
+        <div class="prize-option">🌊 Acquapark</div>
+        <div class="prize-option">🎳 Bowling + Escape Room</div>
+        <div class="prize-option">🎤 Karaoke + Cena</div>
+      </div>
+      <span class="prize-value">Valore massimo indicativo: 600 €</span>
+    </article>
+  </div>
+  <div class="sponsor-note"><strong>Obiettivo sponsor: 2.000 €.</strong> Il budget è un obiettivo iniziale e potrà essere costruito attraverso più partner. I premi e le modalità definitive saranno concordati con la scuola; eventuali estrazioni saranno organizzate nel rispetto delle regole applicabili.</div>
+</section>
+
 <section class="section" id="voce">
-  <div class="kicker">05 / La tua voce</div>
+  <div class="kicker">06 / La tua voce</div>
   <h2 class="title">Dire una cosa è facile.<br>Farla arrivare è il punto.</h2>
   <p class="lead">Troya Pass raccoglie idee, segnalazioni e votazioni e le accompagna fino al report: proposta, valutazione, realizzata oppure non possibile con una spiegazione.</p>
   <div class="hub">
@@ -252,12 +321,43 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
     <div class="hub-item"><div class="hub-icon">🗳️</div><div><h3>VOTA</h3><p>Prima delle assemblee, gli studenti scelgono i temi.</p></div></div>
     <div class="hub-item"><div class="hub-icon">📢</div><div><h3>REPORT</h3><p>“Ci avete parlato. Questo è quello che abbiamo fatto.”</p></div></div>
   </div>
+
+  <div class="voice-form" id="voiceForm">
+    <div class="voice-form-head">
+      <div>
+        <div class="eyebrow">Fatti sentire</div>
+        <h3>Hai un’idea o qualcosa da segnalare?</h3>
+        <p>Scrivilo qui. Puoi anche inviarlo in forma anonima.</p>
+      </div>
+    </div>
+    <div class="form-grid">
+      <label>Tipo
+        <select id="voiceType">
+          <option value="Proposta">💡 Proposta</option>
+          <option value="Segnalazione">⚠️ Segnalazione</option>
+      </select>
+      </label>
+      <label>Nome e cognome <span style="opacity:.55">(facoltativo)</span>
+        <input id="voiceName" placeholder="Puoi lasciarlo vuoto">
+      </label>
+    </div>
+    <label style="display:block;margin-top:12px">Il tuo messaggio
+      <textarea id="voiceMessage" placeholder="Scrivi qui la tua idea, proposta o segnalazione..."></textarea>
+    </label>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px">
+      <button type="button" class="submit" id="submitVoice">Invia →</button>
+      <span style="font-size:12px;opacity:.7">Puoi inviare anche senza inserire il nome. La demo salva la richiesta su questo dispositivo.</span>
+    </div>
+    <div class="status" id="voiceStatus"></div>
+  </div>
+
+  <div id="voiceRequests" class="request" style="margin-top:24px"></div>
 </section>
 
 <section class="section" id="richiedi">
-  <div class="kicker">06 / Demo funzionante</div>
+  <div class="kicker">07 / Demo funzionante</div>
   <h2 class="title">Richiedi i tuoi Troya Points.</h2>
-  <p class="lead">Questa demo salva la richiesta sul dispositivo. Nella versione online collegata al database, la richiesta arriverebbe al responsabile dell'attività per la verifica.</p>
+  <p class="lead">In questa demo la richiesta viene salvata sul dispositivo e resta nello storico qui sotto. Nella versione online collegata al sistema della scuola, arriverebbe al responsabile dell'attività per la verifica.</p>
   <div class="request">
     <div class="form-grid">
       <label>Nome
@@ -268,12 +368,26 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
       </label>
       <label>Attività
         <select id="activity">
+          <option>🏆 Torneo</option>
           <option>🎙️ Podcast</option>
           <option>📰 Giornalino</option>
           <option>🎥 Video Troya Media</option>
-          <option>🏆 Torneo</option>
           <option>🔥 Troya Day</option>
           <option>💡 Proposta</option>
+          <option>📸 Foto evento</option>
+          <option>🎨 Grafica</option>
+          <option>🎥 Montaggio</option>
+          <option>🏆 Organizza torneo</option>
+          <option>♟️ Sfida speciale</option>
+          <option>🏃 Attività sportiva</option>
+          <option>🤝 Supporto evento</option>
+          <option>🎄 Tombolata</option>
+          <option>🏫 Open Day</option>
+          <option>🎤 Evento o spettacolo</option>
+          <option>🎶 Attività artistica</option>
+          <option>🗳️ Votazione</option>
+          <option>🙋 Progetto scolastico</option>
+          <option>🚀 Progetto studenti</option>
         </select>
       </label>
       <label>Data
@@ -312,43 +426,46 @@ photos.forEach((p,i)=>{
 });
 
 
-const key='troya_pass_demo_requests_v9';
+const key='troya_pass_demo_requests_v10';
+const voiceKey='troya_pass_demo_voice_v2';
+const pointsMap={
+  '🏆 Torneo':20,'🎙️ Podcast':30,'📰 Giornalino':30,'🎥 Video Troya Media':30,'🔥 Troya Day':30,
+  '💡 Proposta':10,'📸 Foto evento':20,'🎨 Grafica':20,'🎥 Montaggio':30,'🏆 Organizza torneo':30,
+  '♟️ Sfida speciale':20,'🏃 Attività sportiva':20,'🤝 Supporto evento':20,'🎄 Tombolata':20,
+  '🏫 Open Day':30,'🎤 Evento o spettacolo':20,'🎶 Attività artistica':20,'🗳️ Votazione':5,
+  '🙋 Progetto scolastico':20,'🚀 Progetto studenti':40
+};
+function safeGet(keyName){try{return JSON.parse(localStorage.getItem(keyName)||'[]')}catch(e){return[]}}
+function safeSet(keyName,value){localStorage.setItem(keyName,JSON.stringify(value))}
 function renderRequests(){
-  const arr=JSON.parse(localStorage.getItem(key)||'[]');
-  const box=document.getElementById('requests');
-  box.innerHTML=arr.length?'<strong style="font-size:13px">Richieste salvate su questo dispositivo</strong>':'';
+  const arr=safeGet(key); const box=document.getElementById('requests');
+  box.innerHTML=arr.length?'<strong style="font-size:13px">Le tue richieste su questo dispositivo</strong>':'<span style="font-size:13px;opacity:.7">Nessuna richiesta ancora inviata.</span>';
   arr.slice().reverse().forEach(r=>{
     const el=document.createElement('div');el.className='request-row';
-    el.innerHTML=`<b>IN ATTESA DI VERIFICA</b> · ${r.activity}<br>${r.name||'Studente'} · ${r.className||'Classe non indicata'} · ${r.date||'Data non indicata'}`;
+    el.innerHTML=`<b>IN ATTESA DI VERIFICA</b> · ${r.activity} · <strong>+${r.points} PTS</strong><br>${r.name||'Studente'} · ${r.className||'Classe non indicata'} · ${r.date||'Data non indicata'}`;
     box.appendChild(el);
   });
 }
 document.getElementById('submitRequest').addEventListener('click',()=>{
-  const r={
-    name:document.getElementById('name').value.trim(),
-    className:document.getElementById('className').value.trim(),
-    activity:document.getElementById('activity').value,
-    date:document.getElementById('date').value,
-    description:document.getElementById('description').value.trim()
-  };
-  const s=document.getElementById('status');
-  s.classList.add('show');
-  if(!r.name||!r.description){
-    s.textContent='Compila almeno Nome e descrizione dell’attività.';
-    return;
-  }
-  try{
-    const arr=JSON.parse(localStorage.getItem(key)||'[]');
-    arr.push({...r,createdAt:new Date().toISOString()});
-    localStorage.setItem(key,JSON.stringify(arr));
-    s.textContent='✓ Richiesta inviata. Stato: IN ATTESA DI VERIFICA.';
-    document.getElementById('description').value='';
-    renderRequests();
-  }catch(err){
-    s.textContent='La richiesta è pronta, ma il salvataggio locale non è disponibile in questa modalità del browser.';
-  }
+  const r={name:document.getElementById('name').value.trim(),className:document.getElementById('className').value.trim(),activity:document.getElementById('activity').value,date:document.getElementById('date').value,description:document.getElementById('description').value.trim(),points:pointsMap[document.getElementById('activity').value]||0};
+  const st=document.getElementById('status'); st.classList.add('show');
+  if(!r.name||!r.description){st.textContent='Compila almeno Nome e descrizione dell’attività.';return;}
+  try{const arr=safeGet(key);arr.push({...r,createdAt:new Date().toISOString()});safeSet(key,arr);st.textContent=`✓ Richiesta inviata. ${r.points} Troya Points richiesti · Stato: IN ATTESA DI VERIFICA.`;document.getElementById('description').value='';renderRequests();}
+  catch(err){st.textContent='La richiesta è pronta, ma il salvataggio locale non è disponibile in questa modalità del browser.';}
 });
 renderRequests();
+function renderVoice(){
+  const arr=safeGet(voiceKey); const box=document.getElementById('voiceRequests'); if(!box)return;
+  box.innerHTML=arr.length?'<strong style="font-size:13px">Richieste inviate da questo dispositivo</strong>':'<span style="font-size:13px;opacity:.7">Nessuna proposta o segnalazione inviata ancora.</span>';
+  arr.slice().reverse().forEach(r=>{const el=document.createElement('div');el.className='request-row';el.innerHTML=`<b>${r.type.toUpperCase()}</b> · INVIATA<br>${r.name||'Anonima'} · ${new Date(r.createdAt).toLocaleDateString('it-IT')}<br>${r.message}`;box.appendChild(el);});
+}
+document.getElementById('submitVoice').addEventListener('click',()=>{
+  const type=document.getElementById('voiceType').value,name=document.getElementById('voiceName').value.trim(),message=document.getElementById('voiceMessage').value.trim(),status=document.getElementById('voiceStatus');status.classList.add('show');
+  if(!message){status.textContent='Scrivi prima il tuo messaggio.';return;}
+  try{const arr=safeGet(voiceKey);arr.push({type,name,message,createdAt:new Date().toISOString(),anonymous:!name});safeSet(voiceKey,arr);status.textContent='✓ Inviato. Grazie per aver fatto sentire la tua voce.';document.getElementById('voiceMessage').value='';document.getElementById('voiceName').value='';renderVoice();}
+  catch(err){status.textContent='Il messaggio è pronto, ma il salvataggio locale non è disponibile in questa modalità del browser.';}
+});
+renderVoice();
 </script>
 </body>
 </html>
