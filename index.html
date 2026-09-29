@@ -178,7 +178,7 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
 <div class="navbar">
 <a class="brand" href="#top"><span class="brand-mark">T</span><span>TROYA PASS</span></a>
 <div class="navlinks">
-<a href="#pass">Pass</a><a href="#media">Media</a><a href="#casa">Casa Troya</a><a href="#voce">Voce</a><a href="#points">Points</a><a href="#premi">Premi</a>
+<a href="#pass">Pass</a><a href="#media">Media</a><a href="#casa">Casa Troya</a><a href="#voce">Voce</a><a href="#points">Points</a><a href="#classifica">Classifica</a><a href="#premi">Premi</a>
 </div>
 <a class="navbtn" href="#richiedi">Richiedi Points</a>
 </div>
@@ -281,6 +281,35 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
 </div>
 <p class="lead" style="margin-top:28px;color:#ffe9ed">I Troya Points non premiano soltanto chi fa di più. Premiano chi sceglie di partecipare.</p>
 </div>
+</section>
+<style>
+.leaderboard-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:30px}
+.leaderboard-card{padding:26px;border:1px solid rgba(0,0,0,.1);border-radius:24px;background:#fff;box-shadow:0 12px 35px rgba(0,0,0,.06)}
+.leaderboard-card h3{margin:0 0 18px;font-size:22px}
+.leaderboard-row{display:flex;align-items:center;gap:12px;padding:13px 0;border-top:1px solid rgba(0,0,0,.08);font-weight:800}
+.leaderboard-row:first-of-type{border-top:0}
+.leaderboard-rank{width:34px;font-size:22px}.leaderboard-empty{opacity:.55;font-weight:700}.leaderboard-note{margin-top:22px;opacity:.72}
+@media(max-width:700px){.leaderboard-grid{grid-template-columns:1fr}}
+</style>
+<section class="section" id="classifica">
+<div class="kicker">05 / Classifica</div>
+<h2 class="title">La partecipazione<br/>diventa parte del Troya.</h2>
+<p class="lead">La classifica si aggiorna in base ai Troya Points verificati. Per la demo non vengono mostrati nomi o punteggi inventati.</p>
+<div class="leaderboard-grid">
+<article class="leaderboard-card">
+<h3>👤 Classifica studenti</h3>
+<div class="leaderboard-row"><span class="leaderboard-rank">🥇</span><span class="leaderboard-empty">—</span></div>
+<div class="leaderboard-row"><span class="leaderboard-rank">🥈</span><span class="leaderboard-empty">—</span></div>
+<div class="leaderboard-row"><span class="leaderboard-rank">🥉</span><span class="leaderboard-empty">—</span></div>
+</article>
+<article class="leaderboard-card">
+<h3>🏫 Classifica classi</h3>
+<div class="leaderboard-row"><span class="leaderboard-rank">🥇</span><span class="leaderboard-empty">—</span></div>
+<div class="leaderboard-row"><span class="leaderboard-rank">🥈</span><span class="leaderboard-empty">—</span></div>
+<div class="leaderboard-row"><span class="leaderboard-rank">🥉</span><span class="leaderboard-empty">—</span></div>
+</article>
+</div>
+<p class="leaderboard-note">Con l'avvio ufficiale del Troya Pass, i punti approvati potranno aggiornare automaticamente le classifiche.</p>
 </section>
 <section class="section" id="premi">
 <div class="kicker">05 / Riconoscimenti</div>
