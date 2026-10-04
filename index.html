@@ -137,7 +137,7 @@ label{font-weight:800;font-size:13px} input,textarea,select{width:100%;margin-to
 footer{background:#0b090a;color:#fff;padding:55px 22px 75px}
 .footer-inner{max-width:1180px;margin:auto;display:flex;flex-direction:column;gap:20px}
 .footer-brand{font-family:Manrope;font-size:32px;font-weight:900;letter-spacing:-.06em}.footer-brand span{color:var(--yellow)}
-footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
+footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}.footer-credit{margin-top:18px!important;max-width:none!important;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8f8588!important;font-weight:700}.footer-credit span{color:#d7d0d2}
 
 
 /* DESKTOP */
@@ -172,13 +172,23 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
 .voice-form-head h3{margin:5px 0 6px;font-size:clamp(22px,4vw,32px)}
 .voice-form-head p{margin:0;opacity:.72}.voice-form label{font-size:13px;font-weight:700}.voice-form input,.voice-form select,.voice-form textarea{width:100%;margin-top:7px;padding:13px 14px;border:1px solid rgba(0,0,0,.14);border-radius:13px;background:#fff;font:inherit;box-sizing:border-box}.voice-form textarea{min-height:125px;resize:vertical}.voice-form .submit{cursor:pointer}
 </style>
+<style>
+/* ATTIVITA STUDENTESCHE + SPIEGAMELO TU */
+.activity-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:34px}
+.activity-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow)}
+.activity-icon{font-size:30px;margin-bottom:14px}.activity-card h3{font-family:Manrope;font-size:24px;letter-spacing:-.04em;margin:0 0 8px}.activity-card p{margin:0;color:var(--muted);line-height:1.55}
+.explain-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:34px}.explain-form,.explain-library{background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:var(--shadow)}
+.explain-form h3,.explain-library h3{font-family:Manrope;font-size:27px;letter-spacing:-.04em;margin:0 0 8px}.explain-form p,.explain-library p{color:var(--muted);line-height:1.55}
+.explain-item{border:1px solid var(--line);border-radius:18px;padding:16px;margin-top:12px;background:#fff}.explain-item b{display:block}.explain-meta{font-size:12px;color:var(--muted);margin-top:5px}.explain-status{display:inline-block;margin-top:9px;padding:6px 9px;border-radius:999px;background:#fff4cf;color:#7b5a00;font-size:11px;font-weight:900}.explain-approved{background:#edf9ef;color:#19703a}.explain-video{margin-top:12px;width:100%;aspect-ratio:16/9;border:0;border-radius:16px;background:#10090b}
+@media(max-width:700px){.activity-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <nav class="nav">
 <div class="navbar">
 <a class="brand" href="#top"><span class="brand-mark">T</span><span>TROYA PASS</span></a>
 <div class="navlinks">
-<a href="#pass">Pass</a><a href="#media">Media</a><a href="#casa">Casa Troya</a><a href="#voce">Voce</a><a href="#points">Points</a><a href="#classifica">Classifica</a><a href="#premi">Premi</a>
+<a href="#pass">Pass</a><a href="#media">Media</a><a href="#casa">Casa Troya</a><a href="#cultura">Attività</a><a href="#spiegamelo">Spiegamelo tu</a><a href="#voce">Voce</a><a href="#points">Points</a><a href="#classifica">Classifica</a><a href="#premi">Premi</a>
 </div>
 <a class="navbtn" href="#richiedi">Richiedi Points</a>
 </div>
@@ -252,6 +262,35 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
 </article>
 </div>
 </section>
+<section class="section" id="cultura">
+<div class="kicker">03 / Cosa possono fare gli studenti</div>
+<h2 class="title">Creare. Condividere.<br/>Aiutarsi.</h2>
+<p class="lead">Troya Pass non propone soltanto eventi: crea spazi in cui gli studenti possono mettersi a disposizione degli altri e costruire contenuti in autonomia, con la supervisione necessaria prima della pubblicazione.</p>
+<div class="activity-grid">
+<article class="activity-card"><div class="activity-icon">🎓</div><h3>Spiegamelo tu</h3><p>Uno studente segnala un argomento poco chiaro; un altro può offrirsi di spiegarlo attraverso un video o un materiale approvato.</p><strong>+30 Troya Points</strong></article>
+<article class="activity-card"><div class="activity-icon">🎥</div><h3>Media Lab</h3><p>Video, fotografie, grafiche, reel e contenuti creati dagli studenti per raccontare la vita scolastica.</p><strong>+30 Troya Points</strong></article>
+<article class="activity-card"><div class="activity-icon">📰</div><h3>La Redazione</h3><p>Articoli, interviste, recensioni e approfondimenti realizzati dagli studenti per il giornalino e i canali del progetto.</p><strong>+30 Troya Points</strong></article>
+<article class="activity-card"><div class="activity-icon">💡</div><h3>Laboratorio delle Idee</h3><p>Gli studenti possono proporre idee e, soprattutto, offrirsi per trasformarle in piccoli progetti concreti.</p><strong>+10 Troya Points</strong></article>
+<article class="activity-card"><div class="activity-icon">🎨</div><h3>Creatività</h3><p>Uno spazio per condividere fotografie, disegni, poesie, racconti, musica, grafiche e altre produzioni studentesche.</p><strong>+20 Troya Points</strong></article>
+<article class="activity-card"><div class="activity-icon">🤝</div><h3>Scambio di Competenze</h3><p>Chi sa fare qualcosa può mettersi a disposizione di chi vuole imparare: lingue, montaggio, fotografia, musica, grafica e molto altro.</p><strong>+20 Troya Points</strong></article>
+</div>
+</section>
+<section class="section" id="spiegamelo">
+<div class="kicker">04 / Registro di apprendimento tra studenti</div>
+<h2 class="title">Spiegamelo tu.</h2>
+<p class="lead">Non hai capito un argomento? Inseriscilo nel registro. Un altro studente può offrirsi di spiegarlo. I video e i materiali vengono pubblicati nella biblioteca comune solo dopo l'approvazione.</p>
+<div class="explain-grid">
+<div class="explain-form">
+<h3>➕ Inserisci un argomento</h3><p>Indica cosa non è chiaro e, se vuoi, lascia il tuo nome. La richiesta diventa visibile nel registro delle richieste.</p>
+<div class="form-grid"><label>Materia<input id="exSubject" placeholder="Es. Matematica"/></label><label>Nome <span style="opacity:.55">(facoltativo)</span><input id="exRequester" placeholder="Puoi lasciarlo vuoto"/></label></div>
+<label style="display:block;margin-top:12px">Argomento<input id="exTopic" placeholder="Es. Disequazioni di secondo grado"/></label>
+<label style="display:block;margin-top:12px">Cosa non è chiaro?<textarea id="exQuestion" placeholder="Spiega brevemente dove hai difficoltà..."></textarea></label>
+<button class="submit" id="submitExplainRequest" type="button">Pubblica richiesta →</button><div class="status" id="explainRequestStatus"></div>
+</div>
+<div class="explain-library"><h3>📚 Biblioteca delle spiegazioni</h3><p>Qui saranno visibili a tutti gli studenti le spiegazioni approvate.</p><div id="explainLibrary"><span style="font-size:13px;opacity:.7">Nessuna spiegazione approvata ancora.</span></div></div>
+</div>
+<div class="request" id="explainRequests" style="margin-top:24px"></div>
+</section>
 <section class="points" id="points">
 <div class="points-inner">
 <div class="kicker">04 / Troya Points</div>
@@ -314,19 +353,19 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
 <section class="section" id="premi">
 <div class="kicker">05 / Riconoscimenti</div>
 <h2 class="title">Partecipare deve<br/>lasciare qualcosa.</h2>
-<p class="lead">I Troya Points non servono solo a costruire una classifica. Servono a riconoscere chi sceglie di partecipare, con premi, esperienze e riconoscimenti sostenuti dalla scuola e dagli eventuali sponsor.</p>
+<p class="lead">I Troya Points non servono solo a costruire una classifica. Servono a riconoscere chi sceglie di partecipare, con premi, esperienze e riconoscimenti concordati con la scuola.</p>
 <div class="prize-grid">
 <article class="prize-card">
 <div class="prize-icon">🎁</div>
 <h3>Estrazioni</h3>
 <p>Alcuni traguardi di Troya Points possono dare accesso a estrazioni durante le assemblee.</p>
-<span class="prize-value">3 estrazioni • fino a 200 €</span>
+<span class="prize-value">3 estrazioni</span>
 </article>
 <article class="prize-card featured">
 <div class="prize-icon">👤</div>
 <h3>Premio Studente</h3>
 <p>Un riconoscimento annuale dedicato alla partecipazione individuale e al contributo alla vita scolastica.</p>
-<span class="prize-value">Valore indicativo: 350 €</span>
+
 </article>
 <article class="prize-card">
 <div class="prize-icon">🏫</div>
@@ -337,10 +376,10 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
 <div class="prize-option">🎳 Bowling + Escape Room</div>
 <div class="prize-option">🎤 Karaoke + Cena</div>
 </div>
-<span class="prize-value">Valore massimo indicativo: 600 €</span>
+
 </article>
 </div>
-<div class="sponsor-note"><strong>Obiettivo sponsor: 2.000 €.</strong> Il budget è un obiettivo iniziale e potrà essere costruito attraverso più partner. I premi e le modalità definitive saranno concordati con la scuola; eventuali estrazioni saranno organizzate nel rispetto delle regole applicabili.</div>
+
 </section>
 <section class="section" id="voce">
 <div class="kicker">06 / La tua voce</div>
@@ -415,6 +454,13 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
 <option>🎶 Attività artistica</option>
 <option>🗳️ Votazione</option>
 <option>🙋 Progetto scolastico</option>
+<option>🎓 Spiegazione approvata</option>
+<option>🎓 Spiegamelo tu</option>
+<option>🎥 Media Lab</option>
+<option>📰 La Redazione</option>
+<option>💡 Laboratorio delle Idee</option>
+<option>🎨 Creatività</option>
+<option>🤝 Scambio di Competenze</option>
 <option>🚀 Progetto studenti</option>
 </select>
 </label>
@@ -434,19 +480,21 @@ footer p{margin:0;color:#bdb1b4;max-width:650px;line-height:1.55}
 <footer>
 <div class="footer-inner">
 <div><div class="footer-brand">TROYA <span>PASS</span></div><p>Il progetto degli studenti del Carlo Troya. Partecipare, condividere, costruire.</p></div>
-<p>Demo V7 · progettata mobile-first · immagini integrate nel progetto</p>
+<p>Demo V8 · progettata mobile-first · immagini integrate nel progetto</p><p class="footer-credit">Troya Pass — <span>Ideato, creato e strutturato da Gianfranco Sardano</span></p>
 </div>
 </footer>
 <script>
 (function(){
 'use strict';
-var PK='troya_pass_demo_requests_v10', VK='troya_pass_demo_voice_v2';
-var P={'🏆 Torneo':20,'🎙️ Podcast':30,'📰 Giornalino':30,'🎥 Video Troya Media':30,'🔥 Troya Day':30,'💡 Proposta':10,'📸 Foto evento':20,'🎨 Grafica':20,'🎥 Montaggio':30,'🏆 Organizza torneo':30,'♟️ Sfida speciale':20,'🏃 Attività sportiva':20,'🤝 Supporto evento':20,'🎄 Tombolata':20,'🏫 Open Day':30,'🎤 Evento o spettacolo':20,'🎶 Attività artistica':20,'🗳️ Votazione':5,'🙋 Progetto scolastico':20,'🚀 Progetto studenti':40};
+var PK='troya_pass_demo_requests_v10', VK='troya_pass_demo_voice_v2', EK='troya_pass_demo_explain_v1';
+var P={'🏆 Torneo':20,'🎙️ Podcast':30,'📰 Giornalino':30,'🎥 Video Troya Media':30,'🔥 Troya Day':30,'💡 Proposta':10,'📸 Foto evento':20,'🎨 Grafica':20,'🎥 Montaggio':30,'🏆 Organizza torneo':30,'♟️ Sfida speciale':20,'🏃 Attività sportiva':20,'🤝 Supporto evento':20,'🎄 Tombolata':20,'🏫 Open Day':30,'🎤 Evento o spettacolo':20,'🎶 Attività artistica':20,'🗳️ Votazione':5,'🙋 Progetto scolastico':20,'🎓 Spiegazione approvata':30,'🎓 Spiegamelo tu':30,'🎥 Media Lab':30,'📰 La Redazione':30,'💡 Laboratorio delle Idee':10,'🎨 Creatività':20,'🤝 Scambio di Competenze':20,'🚀 Progetto studenti':40};
 function read(k){try{var v=localStorage.getItem(k);return v?JSON.parse(v):[]}catch(e){return[]}}
 function write(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}}
 function renderPoints(){var b=document.getElementById('requests');if(!b)return;var a=read(PK);b.innerHTML=a.length?'<strong style="font-size:13px">Le tue richieste su questo dispositivo</strong>':'<span style="font-size:13px;opacity:.7">Nessuna richiesta ancora inviata.</span>';a.slice().reverse().forEach(function(r){var e=document.createElement('div');e.className='request-row';e.innerHTML='<b>IN ATTESA DI VERIFICA</b> · '+(r.activity||'Attività')+' · <strong>+'+(r.points||0)+' PTS</strong><br>'+(r.name||'Studente')+' · '+(r.className||'Classe non indicata')+' · '+(r.date||'Data non indicata');b.appendChild(e)})}
 function renderVoice(){var b=document.getElementById('voiceRequests');if(!b)return;var a=read(VK);b.innerHTML=a.length?'<strong style="font-size:13px">Richieste inviate da questo dispositivo</strong>':'<span style="font-size:13px;opacity:.7">Nessuna proposta o segnalazione inviata ancora.</span>';a.slice().reverse().forEach(function(r){var e=document.createElement('div');e.className='request-row';e.innerHTML='<b>'+String(r.type||'Richiesta').toUpperCase()+'</b> · INVIATA<br>'+(r.name||'Anonima')+' · '+new Date(r.createdAt).toLocaleDateString('it-IT')+'<br>'+String(r.message||'');b.appendChild(e)})}
-function bind(){var p=document.getElementById('submitRequest');if(p)p.addEventListener('click',function(ev){ev.preventDefault();var n=document.getElementById('name').value.trim(),c=document.getElementById('className').value.trim(),a=document.getElementById('activity').value,d=document.getElementById('date').value,x=document.getElementById('description').value.trim(),s=document.getElementById('status');s.classList.add('show');if(!n||!x){s.textContent='Compila almeno Nome e descrizione dell’attività.';return}var r={name:n,className:c,activity:a,date:d,description:x,points:P[a]||0,createdAt:new Date().toISOString()},arr=read(PK);arr.push(r);if(!write(PK,arr)){s.textContent='La richiesta è pronta, ma il salvataggio locale non è disponibile in questa modalità del browser.';return}s.textContent='✓ Richiesta inviata. '+r.points+' Troya Points richiesti · Stato: IN ATTESA DI VERIFICA.';document.getElementById('description').value='';renderPoints()});var v=document.getElementById('submitVoice');if(v)v.addEventListener('click',function(ev){ev.preventDefault();var t=document.getElementById('voiceType').value,n=document.getElementById('voiceName').value.trim(),m=document.getElementById('voiceMessage').value.trim(),s=document.getElementById('voiceStatus');s.classList.add('show');if(!m){s.textContent='Scrivi prima il tuo messaggio.';return}var r={type:t,name:n,message:m,createdAt:new Date().toISOString(),anonymous:!n},arr=read(VK);arr.push(r);if(!write(VK,arr)){s.textContent='Il messaggio è pronto, ma il salvataggio locale non è disponibile in questa modalità del browser.';return}s.textContent='✓ Inviato. Grazie per aver fatto sentire la tua voce.';document.getElementById('voiceMessage').value='';document.getElementById('voiceName').value='';renderVoice()});renderPoints();renderVoice()}
+function renderExplain(){var b=document.getElementById('explainRequests'),l=document.getElementById('explainLibrary');if(!b||!l)return;var a=read(EK);b.innerHTML=a.length?'<strong style="font-size:13px">Registro delle richieste su questo dispositivo</strong>':'<span style="font-size:13px;opacity:.7">Nessun argomento richiesto ancora.</span>';a.slice().reverse().forEach(function(r){var e=document.createElement('div');e.className='request-row';e.innerHTML='<b>'+String(r.subject||'Materia').toUpperCase()+'</b> · '+String(r.topic||'Argomento')+'<br>'+(r.requester||'Anonimo')+' · IN ATTESA DI SPIEGAZIONE';b.appendChild(e)});var approved=a.filter(function(r){return r.approved});l.innerHTML=approved.length?'':'<span style="font-size:13px;opacity:.7">Nessuna spiegazione approvata ancora. Quando un contenuto sarà verificato dalla scuola, comparirà qui e sarà visibile a tutti.</span>';approved.forEach(function(r){var e=document.createElement('div');e.className='explain-item';e.innerHTML='<b>'+String(r.subject||'Materia')+' · '+String(r.topic||'Argomento')+'</b><div class="explain-meta">Spiegazione di '+String(r.explainer||'Studente')+'</div><span class="explain-status explain-approved">✓ APPROVATA E VISIBILE A TUTTI</span>'+(r.url?'<a class="btn primary" style="display:inline-block;margin-top:12px;text-decoration:none" href="'+String(r.url).replace(/"/g,'&quot;')+'" target="_blank" rel="noopener">Apri spiegazione →</a>':'');l.appendChild(e)})}
+function bindExplain(){var b=document.getElementById('submitExplainRequest');if(!b)return;b.addEventListener('click',function(ev){ev.preventDefault();var subject=document.getElementById('exSubject').value.trim(),requester=document.getElementById('exRequester').value.trim(),topic=document.getElementById('exTopic').value.trim(),question=document.getElementById('exQuestion').value.trim(),s=document.getElementById('explainRequestStatus');s.classList.add('show');if(!subject||!topic||!question){s.textContent='Compila materia, argomento e cosa non è chiaro.';return}var r={subject:subject,requester:requester,topic:topic,question:question,approved:false,createdAt:new Date().toISOString()},arr=read(EK);arr.push(r);if(!write(EK,arr)){s.textContent='La richiesta è pronta, ma il salvataggio locale non è disponibile in questa modalità del browser.';return}s.textContent='✓ Richiesta inserita nel registro. Ora un altro studente potrà offrirsi di spiegarla.';document.getElementById('exTopic').value='';document.getElementById('exQuestion').value='';renderExplain()})}
+function bind(){var p=document.getElementById('submitRequest');if(p)p.addEventListener('click',function(ev){ev.preventDefault();var n=document.getElementById('name').value.trim(),c=document.getElementById('className').value.trim(),a=document.getElementById('activity').value,d=document.getElementById('date').value,x=document.getElementById('description').value.trim(),s=document.getElementById('status');s.classList.add('show');if(!n||!x){s.textContent='Compila almeno Nome e descrizione dell’attività.';return}var r={name:n,className:c,activity:a,date:d,description:x,points:P[a]||0,createdAt:new Date().toISOString()},arr=read(PK);arr.push(r);if(!write(PK,arr)){s.textContent='La richiesta è pronta, ma il salvataggio locale non è disponibile in questa modalità del browser.';return}s.textContent='✓ Richiesta inviata. '+r.points+' Troya Points richiesti · Stato: IN ATTESA DI VERIFICA.';document.getElementById('description').value='';renderPoints()});var v=document.getElementById('submitVoice');if(v)v.addEventListener('click',function(ev){ev.preventDefault();var t=document.getElementById('voiceType').value,n=document.getElementById('voiceName').value.trim(),m=document.getElementById('voiceMessage').value.trim(),s=document.getElementById('voiceStatus');s.classList.add('show');if(!m){s.textContent='Scrivi prima il tuo messaggio.';return}var r={type:t,name:n,message:m,createdAt:new Date().toISOString(),anonymous:!n},arr=read(VK);arr.push(r);if(!write(VK,arr)){s.textContent='Il messaggio è pronto, ma il salvataggio locale non è disponibile in questa modalità del browser.';return}s.textContent='✓ Inviato. Grazie per aver fatto sentire la tua voce.';document.getElementById('voiceMessage').value='';document.getElementById('voiceName').value='';renderVoice()});renderPoints();renderVoice();bindExplain();renderExplain()}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bind);else bind();
 })();
 </script>
